@@ -172,7 +172,7 @@ header .container {
 
 .hero-section {
   background-color: #2e2f42;
-  padding: 72px 52px;
+  padding: 72px 0;
   background-image:
     linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url('../images/HeroBgPhone.jpg');
@@ -189,6 +189,7 @@ header .container {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 0 52px;
 }
 
 .hero-section .text {
@@ -199,7 +200,7 @@ header .container {
   line-height: 1.11;
   letter-spacing: 0.02em;
   margin-bottom: 72px;
-  max-width: 496px;
+  max-width: 216px;
 }
 .hero-section .button {
   font-weight: 500;
@@ -532,7 +533,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 24px;
+  gap: 16px;
 }
 
 .subscribe-form {
@@ -834,6 +835,7 @@ h2 {
   visibility: hidden;
   pointer-events: none;
   background-color: #ffffff;
+  opacity: 0;
 }
 
 .menu-backdrop.is-open {
@@ -849,6 +851,9 @@ h2 {
   padding: 72px 0 40px 16px;
   position: fixed;
 }
+
+.mobile-menu.is-open{}
+
 .menu-pop-nav {
   display: flex;
   flex-direction: column;
@@ -954,7 +959,10 @@ h2 {
     font-size: 56px;
     line-height: 1.07;
     margin-bottom: 36px;
+    max-width: 496px;
   }
+
+
   .features-list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -1011,12 +1019,14 @@ h2 {
   }
   .footer-subscribe-wrapper {
     flex-direction: row;
+    gap: 24px;
   }
 }
 
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
+    padding: 0 15px;
   }
   .address-list {
     flex-direction: row;
