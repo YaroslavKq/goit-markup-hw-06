@@ -449,6 +449,7 @@ h2 {
 
 .footer .container {
   display: flex;
+  flex-direction: column;
   align-items: baseline;
   justify-content: flex-start;
 }
@@ -509,6 +510,8 @@ h2 {
   background-color: #31d0aa;
 }
 
+
+
 .footer-subscribe-label {
   display: block;
   margin-bottom: 16px;
@@ -520,6 +523,7 @@ h2 {
 
 .footer-subscribe-wrapper {
   display: flex;
+  flex-direction: column;
   gap: 24px;
 }
 
@@ -1010,13 +1014,16 @@ h2 {
 
   .portfolio-list{
     row-gap: 48px;
-    margin-bottom: 120px;
   }
   .portfolio-card{
      box-shadow: none;
   }
 .portfolio-card{
   width: calc((100% - 2 * 24px) / 3);
+}
+
+.portfolio-section {
+  padding: 120px 0;  
 }
 
 }
