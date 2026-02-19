@@ -942,7 +942,6 @@ h2 {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 24px;
-    margin-left: 16px;
   }
   .features-list li {
     width: calc((100% - 24px) / 2);
@@ -965,6 +964,9 @@ h2 {
 .portfolio-list{
   gap: 24px;
   flex-direction: row;
+  margin: 0 auto;
+  max-width: 736px;
+
 }
 .portfolio-card{
   width: calc((100% - 24px) / 2);
@@ -975,7 +977,7 @@ h2 {
   align-items: flex-start;
   justify-content: flex-start;
   margin: 0 auto;
-  padding: 96px 108px;
+  padding: 0 108px;
   gap: 24px;
 }
 
@@ -1053,6 +1055,8 @@ align-items: flex-start;
 
   .portfolio-list{
     row-gap: 48px;
+    max-width: 1128px;
+    margin: 0 auto;
   }
   .portfolio-card{
      box-shadow: none;
@@ -1065,4 +1069,16 @@ align-items: flex-start;
   padding: 120px 0;  
 }
 
+.footer .container {
+  flex-direction: row;
+  padding: 0;
+  justify-content: center;
+  gap: 0;
+}
+.footer-info{
+  margin-right: 120px;
+}
+.footer-contact{
+  margin-right: 80px;
+}
 }
