@@ -52,7 +52,7 @@
             </li>
           </ul>
         </address>
-        <button class="header-button" type="button" data-menu-open>
+        <button class="burger-button" type="button" data-menu-open>
           <svg height="24" width="24" class="header-button-svg">
             <use href="./images/icons.svg#icon-header-button"></use>
           </svg>
@@ -711,92 +711,87 @@
     <script src="./js/modal.js"></script>
     <!--Header pop-up-->
 
-    <div class="menu-backdrop" data-menu>
-      <div class="mobile-menu">
-        <div class="container">
-          <button class="close-button" type="button" data-menu-close>
-            <svg height="8" width="8" class="close-svg">
-              <use href="./images/icons.svg#icon-close"></use>
-            </svg>
-          </button>
-          <ul class="menu-pop-nav">
+    <div class="mobile-menu" data-menu>
+      <div class="container">
+        <button class="close-button" type="button" data-menu-close>
+          <svg height="8" width="8" class="close-svg">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="menu-pop-nav">
+          <li>
+            <a class="link-burger current" href="./index.html">Studio</a>
+          </li>
+          <li>
+            <a class="link-burger" href="/">Portfolio</a>
+          </li>
+          <li>
+            <a class="link-burger" href="/">Contacts</a>
+          </li>
+        </ul>
+
+        <address>
+          <ul class="address-list-burger">
             <li>
-              <a class="link-burger current" href="./index.html">Studio</a>
+              <a
+                class="address-link-burger selected"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
             </li>
             <li>
-              <a class="link-burger" href="/">Portfolio</a>
-            </li>
-            <li>
-              <a class="link-burger" href="/">Contacts</a>
+              <a class="address-link-burger" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
             </li>
           </ul>
+        </address>
+        <ul class="burger-socials">
+          <li>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              class="footer-social-link"
+            >
+              <svg height="24" width="24" class="social-svg">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://x.com/" target="_blank" class="footer-social-link">
+              <svg height="24" width="24" class="social-svg">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
 
-          <address>
-            <ul class="address-list-burger">
-              <li>
-                <a
-                  class="address-link-burger selected"
-                  href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li>
-                <a class="address-link-burger" href="tel:+110001111111"
-                  >+11 (000) 111-11-11</a
-                >
-              </li>
-            </ul>
-          </address>
-          <ul class="burger-socials">
-            <li>
-              <a
-                href="https://www.instagram.com/"
-                target="_blank"
-                class="footer-social-link"
-              >
-                <svg height="24" width="24" class="social-svg">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://x.com/"
-                target="_blank"
-                class="footer-social-link"
-              >
-                <svg height="24" width="24" class="social-svg">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="https://www.facebook.com/"
-                target="_blank"
-                class="footer-social-link"
-              >
-                <svg height="24" width="24" class="social-svg">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/"
-                target="_blank"
-                class="footer-social-link"
-              >
-                <svg height="24" width="24" class="social-svg">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+          <li>
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              class="footer-social-link"
+            >
+              <svg height="24" width="24" class="social-svg">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              class="footer-social-link"
+            >
+              <svg height="24" width="24" class="social-svg">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
+
     <script src="./js/menu.js"></script>
     <!--Header pop-up END-->
   </body>
